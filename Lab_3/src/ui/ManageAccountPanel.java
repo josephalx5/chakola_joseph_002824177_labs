@@ -215,7 +215,7 @@ public class ManageAccountPanel extends javax.swing.JPanel {
         dtm.setRowCount(0);
         for(Account a:directory.getAccountList()){
             Object [] obj = new Object[4];
-            obj[0] = a;
+            obj[0] = a.getRoutingNumber();
             obj[1] = a.getAccountNumber();
             obj[2] = a.getBankName();
             obj[3] = a.getBalance();

@@ -16,12 +16,16 @@ public class Product {
     private String name;
     private int price;
     private int id;
+    
+    private ArrayList<Feature> features;
 
     private static int count = 0;
     
     public Product() {
         count++;
         id = count;
+        
+        features = new ArrayList<Feature>();
         
     }
 
@@ -50,6 +54,17 @@ public class Product {
     @Override
     public String toString() {
         return name;
+    }
+
+    public void addNewFeature(Feature f) {
+        features.add(f);
+    }
+
+    public ArrayList<Feature> getFeatures() {
+        return features;
+    }
+    public void removeFeature(int index){
+        features.remove(index);
     }
     
 }

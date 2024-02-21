@@ -38,12 +38,12 @@ public class Supplier {
     }
 
     public ProductCatalog getProductCatalog() {
-        return productCatalog;
+        return productCatalog;  
     }
     
     
     @Override
-    public String toString() {
+    public String toString() {  
         return supplyName;
     }
     
